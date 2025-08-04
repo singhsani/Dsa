@@ -24,9 +24,26 @@ public class PrintBinaryTreeInPreOrder{
         }
         return cuNode2;
     }
+    public void addDataInTree(int val){
+        root=addNode2(root, val);
+    }
+    public static void printInPreOrder(Node2 cuNode2){
+        if(cuNode2 !=null){
+            System.out.println(cuNode2.value);
+            printInPreOrder(cuNode2.left);
+            printInPreOrder(cuNode2.right);
+            
+        }
+    }
     public static void main(String[] args) {
         PrintBinaryTreeInPreOrder pbtipo=new PrintBinaryTreeInPreOrder();
-        
+        pbtipo.addDataInTree(12);
+        pbtipo.addDataInTree(6);
+        pbtipo.addDataInTree(2);
+        pbtipo.addDataInTree(20);
+        pbtipo.addDataInTree(13);
+        pbtipo.addDataInTree(16);
+        printInPreOrder(pbtipo.root);
     }
 
 }
