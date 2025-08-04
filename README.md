@@ -15,6 +15,7 @@ Nodes are organized in levels, with the root at the highest level and subsequent
 <h6>Types of binary trees include:</h6>
 <ul>
 <li>Full Binary Tree: Every node has either zero or two children.</li>
+![alt text](image.png)
 <li>Complete Binary Tree: All levels are completely filled, except possibly the last level, which is filled from left to right.</li>
 <li>Perfect Binary Tree: All internal nodes have two children, and all leaf nodes are at the same level.</li>
 <li>Degenerate/Pathological Tree: Each internal node has only one child, resembling a linked list.</li>
